@@ -143,7 +143,7 @@ export default class SettingsUpdatesForm extends Component {
 
         <div className="px2">
           <div className="pt3 border-top">
-            {this.renderVersionUpdateNotice()}
+            {/* {this.renderVersionUpdateNotice()} */}
           </div>
         </div>
       </div>

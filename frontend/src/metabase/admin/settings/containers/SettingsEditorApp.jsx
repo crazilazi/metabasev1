@@ -148,15 +148,17 @@ export default class SettingsEditorApp extends Component {
           updateSlackSettings={this.props.updateSlackSettings}
         />
       );
-    } else if (activeSection.slug === "updates") {
-      return (
-        <SettingsUpdatesForm
-          settings={this.props.settings}
-          elements={activeSection.settings}
-          updateSetting={this.updateSetting}
-        />
-      );
-    } else if (activeSection.slug === "authentication") {
+    } 
+    // else if (activeSection.slug === "updates") {
+    //   return (
+    //     <SettingsUpdatesForm
+    //       settings={this.props.settings}
+    //       elements={activeSection.settings}
+    //       updateSetting={this.updateSetting}
+    //     />
+    //   );
+    // } 
+    else if (activeSection.slug === "authentication") {
       // HACK - the presence of this param is a way for us to tell if
       // a user is looking at a sub section of the autentication section
       // since allowing for multi page settings more broadly would require

@@ -78,20 +78,21 @@ const MetabaseSettings = {
   },
 
   newVersionAvailable: function(settings) {
-    let versionInfo = _.findWhere(settings, { key: "version-info" }),
-      currentVersion = MetabaseSettings.get("version").tag;
+    // let versionInfo = _.findWhere(settings, { key: "version-info" }),
+    //   currentVersion = MetabaseSettings.get("version").tag;
 
-    if (versionInfo) {
-      versionInfo = versionInfo.value;
-    }
+    // if (versionInfo) {
+    //   versionInfo = versionInfo.value;
+    // }
 
-    return (
-      versionInfo &&
-      MetabaseUtils.compareVersions(
-        currentVersion,
-        versionInfo.latest.version,
-      ) < 0
-    );
+    // return (
+    //   versionInfo &&
+    //   MetabaseUtils.compareVersions(
+    //     currentVersion,
+    //     versionInfo.latest.version,
+    //   ) < 0
+    // );
+    return false;
   },
 
   // returns a map that looks like {total: 6, digit: 1}
